@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <style>
+
+        body{
+          background-image: url('green.jpg');
+        }
+        
+        h1{
+          color: black;
+          text-align: center;
+        }
+        
+        .btn-group button {
+  background-color: #04AA6D; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: black; /* White text */
+  font-size: large;
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  display: block;
+  align-items: center;
+  padding:30px;
+  display: flex;
+  margin: auto;
+}       
+        /* Clear floats (clearfix hack) */
+        .btn-group:after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .btn-group button:not(:last-child) {
+          border-right: none; /* Prevent double borders */
+        }
+        
+        /* Add a background color on hover */
+        .btn-group button:hover {
+          background-color: #27ab9e;
+        }
+        
+        
+        </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Select the table to view</h1>
+    <div class="btn-group" style="width:100%">
+        <form action="viewpat.php">
+        <button class="btn btn-space"><b>Patient Details</b></button>
+        </form>
+        <form action="viewdoc.php">
+        <button class="btn btn-space"><b>Doctor Details</b></button>
+        </form> 
+        <form action="viewapot.php">
+        <button class="btn btn-space"><b>Appointment Details</b></button>
+        </form>
+        <form action="viewins.php">
+        <button class="btn btn-space"><b>Insurance</b></button>
+    </form>
+        <form action="viewmed.php">
+        <button class="btn btn-space"><b>Medical History</b></button>
+    </form>
+    <form action="dashboard.html">
+      <button class="btn btn-space"><b>Go Back</b></button>
+      </form> 
+      
+      </div>
+    
+</body>
+</html>

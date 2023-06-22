@@ -1,0 +1,104 @@
+<html>
+<title>INSERT</title>
+<body>
+<form action="doctor.php" method="post">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body{
+    background-image: url('green.jpg');
+}
+.button {
+  background-color: #8894b4; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+ 
+}
+.container{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+   }
+
+.par{
+background-color:rgb(6, 25, 34);
+color:white;
+font-size:20px;
+}
+
+.lab{
+padding:10px;
+color:black;
+}
+label {
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            line-height: 150%;
+            font-size: 18px;
+            color:black;
+}
+h1{
+    font-size: 16px;
+    text-align: center;
+}
+.button{
+    text-align: center;
+    background-color: #04AA6D; /* Green background */
+        border: 1px solid green; /* Green border */
+        color: black; /* White text */
+        font-size: large;
+        padding: 10px 24px; /* Some padding */
+        cursor: pointer; /* Pointer/hand icon */ /* Float the buttons side by side */ 
+        position: relative;
+        display: flex;
+        margin:auto;
+}
+.button-two{
+    text-align: center;
+    background-color: #04AA6D; /* Green background */
+        border: 1px solid green; /* Green border */
+        color: black; /* White text */
+        font-size: large;
+        padding: 10px 24px; /* Some padding */
+        cursor: pointer; /* Pointer/hand icon */
+        position: relative;
+        display: flex;
+        margin: auto; 
+}
+input[type="text"] {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+button {
+  display: flex;
+  justify-content: center;
+}
+</style>
+    <h1 class="w3-xxxlarge"><b>Insert Into Doctors Table: </b></h1>
+      <h6>
+<label class="lab">NAME</label>
+<input type="text" name="dname">
+<label class="lab">SHIFT</label>
+<input type="text" name="shift" >
+<label class="lab">DOCTOR ID</label>
+<input type="text" name="did">
+<label class="lab">AGE</label>
+<input type="text" name="dage">
+<label class="lab">GENDER</label>
+<input type="text" name="dgender"><br>
+<button class ="button" type="submit">SUBMIT</button><br>
+<button class="button-two" onclick="location.href='dataentrydash.html'" type="button">BACK</button>
+  </header>
+
+
+</body>
+</html>

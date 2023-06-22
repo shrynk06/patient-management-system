@@ -1,0 +1,86 @@
+<html>
+<style>
+
+body{
+  background-image: url('green.jpg');
+}
+
+h1{
+  color: black;
+  text-align: center;
+}
+h3{
+  color: #000077;
+  text-align: center;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.btn-group button {
+  background-color: #04AA6D; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: black; /* White text */
+  font-size: large;
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  display: inline-block;
+  align-items: center;
+  padding:30px;
+  display: flex;
+  margin: auto;
+}
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #27ab9e;
+}
+button.last{
+    padding: 15px;
+    font-size: small;
+}
+
+
+</style>
+<body>
+<h1 class ="text">Select Button</h1>
+
+<div class="btn-group" style="width:100%">
+<h3>RETREIVING A LIST OF ALL PATIENTS TREATED BY A DR. MADHUKAR</h3>
+  <form action="queryone.php">
+  <button class="btn-btn-space-one"><b>Query 1</b></button>
+  </form>
+  <h3>RETREIVING ALL UPCOMING APPOINTMENTS SCHEDULED</h3>
+  <form action="querytwo.php">
+  <button class="btn-btn-space-two"><b>Query 2</b></button>
+  </form>
+  <h3>RETREIVING A LIST OF ALL PATIENTS SUFFERING FROM DIABETES</h3>
+  <form action="querythree.php">
+  <button class="btn-btn-space-three"><b>Query 3</b></button>
+  </form>
+  <h3>RETREIVING DETAILS PATIENTS WHO HAVE VISITED THE HOSPITAL IN 2017</h3>
+  <form action="queryfour.php">
+  <button class="btn-btn-space-four"><b>Query 4</b></button>
+  </form>
+  <h3>RETREIVING A LIST OF ALL PATIENTS WITH INSURANCE AMOUNT ABOVE 5 LAKH</h3>
+  <form action="queryfive.php">
+  <button class="btn-btn-space-five"><b>Query 5</b></button>
+  </form>
+  <form action="dashboard.html">
+    <button class = "last"><b>Back</b></button>
+    </form>
+
+
+</div>
+
+</body>
+</html>

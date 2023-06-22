@@ -1,0 +1,70 @@
+<html>
+<style>
+
+body{
+  background-image: url('green.jpg'); 
+}
+
+h1{
+  color: black;
+  text-align: center;
+}
+
+.btn-group button {
+  background-color: #04AA6D; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: black; /* White text */
+  font-size: large;
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  display: inline-block;
+  align-items: center;
+  padding:30px;
+  display: flex;
+  margin: auto;
+}
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #27ab9e;
+}
+
+
+</style>
+<body>
+<h1 class ="text">Select Button</h1>
+
+<div class="btn-group" style="width:100%">
+  <form action="enterdetails.html">
+  <button class="btn-btn-space-one"><b>Retreive Details</b></button>
+  </form>
+  <form action="dataentrydash.html">
+  <button class="btn-btn-space-two"><b>Data Entry</b></button>
+  </form>
+  <form action="storedproc.php">
+  <button class="btn-btn-space-three"><b>Stored Procedure</b></button>
+  </form>
+  <form action="viewtable.html">
+  <button class="btn-btn-space-four"><b>View Table</b></button>
+  </form>
+  <form action="querydash.html">
+  <button class="btn-btn-space-five"><b>Queries</b></button>
+  </form>
+  <form action="aboutus.html">
+  <button class="btn-btn-space-five"><b>About Us</b></button>
+  </form>
+
+</div>
+
+</body>
+</html>

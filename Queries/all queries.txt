@@ -1,0 +1,31 @@
+
+RETREIVING A LIST OF ALL PATIENTS TREATED BY A DR. MADHUKAR
+SELECT patient.* FROM patient
+JOIN medicalhistory m ON patient.pid = m.pid
+JOIN doctors ON m.did = doctors.did
+WHERE doctors.name = 'Madhukar';
+
+RETREIVING ALL UPCOMING APPOINTMENTS SCHEDULED
+SELECT * FROM appointments
+where status='Scheduled' AND ddate > NOW()
+
+RETREIVING A LIST OF ALL PATIENTS SUFFERING FROM DIABETES
+$sql = "SELECT patient.name, medicalhistory.pid, medicalhistory.did, medicalhistory.medication, medicalhistory.conditionn
+FROM patient
+JOIN medicalhistory ON patient.pid = medicalhistory.pid
+WHERE medicalhistory.conditionn LIKE '%Diabetes%'";
+
+RETREIVING DETAILS PATIENTS WHO HAVE VISITED THE HOSPITAL IN 2017
+SELECT patient.name, medicalhistory.pid, medicalhistory.mdate, medicalhistory.medication, medicalhistory.conditionn
+FROM patient
+JOIN medicalhistory ON patient.pid = medicalhistory.pid
+WHERE medicalhistory.mdate BETWEEN '2017-01-01' AND '2017-12-31';
+
+RETREIVING A LIST OF ALL PATIENTS WITH INSURANCE AMOUNT ABOVE 5 LAKH
+
+SELECT insurance.pid, patient.name, insurance.amount, insurance.policynumber, insurance.dateofmaturity
+FROM patient
+JOIN insurance ON patient.pid = insurance.pid
+WHERE insurance.amount > 500000;
+
+

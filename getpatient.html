@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>HTML Form</title>
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url('green.jpg');
+    }
+        h1{
+            text-align: center;
+            color: #025839;
+        }
+        label {
+            display: block;
+            text-align: center;
+            line-height: 150%;
+            font-size: 28px;
+            color:#025839;
+        }
+        input[type = "text"]{
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid black;
+            padding: 14px 10px;
+            width: 200px;
+            color: black;
+            transition: 0.25s;
+        }
+        input[type = "submit"]{
+            display: block;
+            margin: auto;
+            text-align: center;
+            border: 2px solid black;
+            color: black;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+        input[type = "submit"] {
+        background-color: #04AA6D; /* Green background */
+        border: 1px solid green; /* Green border */
+        color: black; /* White text */
+        font-size: large;
+        padding: 10px 24px; /* Some padding */
+        cursor: pointer; /* Pointer/hand icon */
+        float: left; /* Float the buttons side by side */
+        margin: 0px 720px auto;
+
+}
+        .back{
+            background-color: #04AA6D; /* Green background */
+        border: 1px solid green; /* Green border */
+        color: black; /* White text */
+        font-size: large;
+        padding: 10px 24px; /* Some padding */
+        cursor: pointer; /* Pointer/hand icon */
+        float: left; /* Float the buttons side by side */
+        margin-left: 47.4%; 
+        position: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>GET DETAILS</h1>
+    <form action="getpat.php" method="post">
+        <label><b>Patient ID: </b></label>
+        <input type="text" placeholder="Enter ID of patient" name="pname">
+        <input type="submit" value="Submit"><br><br>
+        <br><a  class ="back" href="enterdetails.html">Back</a>
+        
+
+
+    </form> 
+
+
+</body>
+</html>
